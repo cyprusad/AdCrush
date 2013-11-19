@@ -26,7 +26,8 @@ public class MainActivity extends Activity {
 	
 	@Override
 	protected void onDestroy() {
-		moPubView.destroy();
+		moPubView1.destroy();
+		moPubView2.destroy();
 	    super.onDestroy(); 
 	}
 }
