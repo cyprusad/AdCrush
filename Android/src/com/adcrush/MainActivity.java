@@ -14,6 +14,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.ad_crush_application);
 		
 		moPubView1 = (MoPubView) findViewById(R.id.adview1);
 		moPubView1.setAdUnitId("7f1d6bc44c7b44cc92d97b3829498daf"); // Enter your Ad Unit ID from www.mopub.com
@@ -27,7 +28,7 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onDestroy() {
 		moPubView1.destroy();
-		moPubView2.destroy();
+		moPubView2.destroy(); 
 	    super.onDestroy(); 
 	}
 }
